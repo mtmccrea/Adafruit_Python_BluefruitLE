@@ -90,8 +90,8 @@ def main():
         rx.start_notify(received)
 
         # Now just wait for 30 seconds to receive data.
-        print('Waiting 60 seconds to receive data from the device...')
-        time.sleep(60)
+        print('Waiting 5 seconds to receive data from the device...')
+        time.sleep(5)
     finally:
         # Make sure device is disconnected on exit.
         device.disconnect()

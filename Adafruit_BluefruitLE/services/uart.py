@@ -61,6 +61,7 @@ class UART(ServiceBase):
         # Callback that's called when data is received on the RX characteristic.
         # Just throw the new data in the queue so the read function can access
         # it on the main thread.
+        # print '\n_rx_rcvd: {}'.format(data)
         self._queue.put(data)
 
     def write(self, data):
